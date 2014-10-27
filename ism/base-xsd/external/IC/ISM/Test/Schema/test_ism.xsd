@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="test:ism"
+    xmlns:ism="urn:us:gov:ic:ism" xmlns:ntk="urn:us:gov:ic:ntk" xmlns:test="test:ism">
+    <xs:import namespace="urn:us:gov:ic:ism" schemaLocation="../../Schema/ISM/IC-ISM.xsd"/>
+    <xs:import namespace="urn:us:gov:ic:ntk" schemaLocation="../../Schema/NTK/IC-NTK.xsd"/>
+    <xs:element name="root">
+        <xs:complexType>
+            <xs:sequence minOccurs="1" maxOccurs="unbounded">
+                <xs:choice minOccurs="1" maxOccurs="1">
+                    <xs:element ref="test:singleElement" minOccurs="1" maxOccurs="1"/>
+                    <xs:element ref="test:parentElement" minOccurs="1" maxOccurs="1"/>
+                    <xs:element ref="ism:NoticeList" minOccurs="0" maxOccurs="1"/>
+                </xs:choice>
+            </xs:sequence>
+            <xs:attribute ref="ism:DESVersion"/>
+            <xs:attributeGroup ref="ism:ResourceNodeAttributeGroup"/>
+            <xs:attributeGroup ref="ntk:NTKRootNodeOptionAttributeGroup"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="singleElement">
+        <xs:complexType>
+            <xs:attributeGroup ref="ism:NoticeAttributesGroup"/>
+            <xs:attributeGroup ref="ism:POCAttributeGroup"/>
+            <xs:attribute ref="ism:excludeFromRollup"/>
+            <xs:attributeGroup ref="ntk:NtkPortionAccessGroup"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="parentElement">
+        <xs:complexType>
+            <xs:sequence minOccurs="1" maxOccurs="unbounded">
+                <xs:choice minOccurs="1" maxOccurs="1">
+                    <xs:element ref="test:childElement" minOccurs="1" maxOccurs="1"/>
+                    <xs:element ref="ism:NoticeList" minOccurs="0" maxOccurs="1"/>
+                </xs:choice>
+            </xs:sequence>
+            <xs:attributeGroup ref="ism:ResourceNodeAttributeOptionGroup"/>
+            <xs:attributeGroup ref="ism:POCAttributeGroup"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="childElement">
+        <xs:complexType>
+            <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                <xs:choice minOccurs="1" maxOccurs="1">
+                    <xs:element ref="test:grandchildElement" minOccurs="1" maxOccurs="1"/>
+                    <xs:element ref="ism:NoticeList" minOccurs="0" maxOccurs="1"/>
+                </xs:choice>
+            </xs:sequence>
+            <xs:attributeGroup ref="ism:NoticeAttributesGroup"/>
+            <xs:attributeGroup ref="ism:POCAttributeGroup"/>
+            <xs:attribute ref="ism:excludeFromRollup"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="grandchildElement">
+        <xs:complexType>
+            <xs:attributeGroup ref="ism:SecurityAttributesGroup"/>
+            <xs:attributeGroup ref="ism:POCAttributeGroup"/>
+            <xs:attribute ref="ism:excludeFromRollup"/>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

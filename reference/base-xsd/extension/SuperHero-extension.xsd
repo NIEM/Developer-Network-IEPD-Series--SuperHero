@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="1.0" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/SuperHero-extension" 
+	xmlns:tns="http://www.example.org/SuperHero-extension"
+	xmlns:nc="http://release.niem.gov/niem/niem-core/3.0/" 
+	xmlns:structures="http://release.niem.gov/niem/structures/3.0/"
+	xmlns:niem-xsd="http://release.niem.gov/niem/proxy/xsd/3.0/"
+	ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/#ExtensionSchemaDocument"
+	xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/"
+	elementFormDefault="qualified">
+
+	<xs:annotation>
+		<xs:documentation>AThis IEPD show how to create references structures id/ref.  The context of this IEPD is based on Superheros.
+		</xs:documentation>
+	</xs:annotation>
+	
+	<xs:import namespace="http://release.niem.gov/niem/niem-core/3.0/"
+		schemaLocation="../niem/niem-core/3.0/niem-core.xsd" />
+	<xs:import schemaLocation="../niem/proxy/xsd/3.0/xs.xsd"
+		namespace="http://release.niem.gov/niem/proxy/xsd/3.0/"/>
+	<xs:import namespace="http://release.niem.gov/niem/structures/3.0/"
+		schemaLocation="../niem/structures/3.0/structures.xsd" />
+
+	<xs:element name="SuperHero" type="tns:SuperHeroType"  nillable="true">
+		<xs:annotation>
+			<xs:documentation> A person with super human abilities generally used
+				to help others.
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="PseudonymText" type="niem-xsd:string">
+		<xs:annotation>
+			<xs:documentation>The publicly known name of the super hero
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="SuperPowerText" type="niem-xsd:string">
+		<xs:annotation>
+			<xs:documentation>A description of a superhuman, supernatural, or paranormal ability.
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	
+	<xs:complexType name="SuperHeroType">
+		<xs:annotation>
+			<xs:documentation>
+				A person with super human abilities generally used
+				to help others.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="nc:PersonType">
+				<xs:sequence>
+					<xs:element ref="tns:PseudonymText" />
+					<xs:element ref="tns:SuperPowerText" minOccurs="0"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	
+	<xs:complexType name="JusticeLeagueOfAmericaSuperHeroListType">
+		<xs:annotation>
+			<xs:documentation>
+				A list of Superhero's in the original Justice Leagure of American TV show.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="structures:ObjectType">
+				<xs:sequence>
+					<xs:element ref="tns:SuperHero" minOccurs="1" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="FiftyTwoJusticeLeagueSuperHeroListType">
+		<xs:annotation>
+			<xs:documentation>
+				A list of Superhero's in the original 52 Justice League TV show.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="structures:ObjectType">
+				<xs:sequence>
+					<xs:element ref="tns:SuperHero" minOccurs="1" maxOccurs="unbounded" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	
+	<xs:element name="JusticeLeagueOfAmericaSuperHeroList" type="tns:JusticeLeagueOfAmericaSuperHeroListType"  nillable="true">
+		<xs:annotation>
+			<xs:documentation> A person with super human abilities generally used
+				to help others.
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	
+	<xs:element name="FiftyTwoJusticeLeagueSuperHeroList" type="tns:FiftyTwoJusticeLeagueSuperHeroListType"  nillable="true">
+		<xs:annotation>
+			<xs:documentation> A person with super human abilities generally used
+				to help others.
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	
+	<xs:complexType name="JusticeLeagueShowsType">
+		<xs:annotation>
+			<xs:documentation>
+				A list of JusticeLeague Shows with cast members.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="structures:ObjectType">
+				<xs:sequence>
+					<xs:element ref="tns:JusticeLeagueOfAmericaSuperHeroList" minOccurs="1" maxOccurs="1" />
+					<xs:element ref="tns:FiftyTwoJusticeLeagueSuperHeroList" minOccurs="1" maxOccurs="1" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	
+	<xs:element name="JusticeLeagueShows" type="tns:JusticeLeagueShowsType"  nillable="true">
+		<xs:annotation>
+			<xs:documentation>A list of JusticeLeague TV Show cast members.
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+</xs:schema>

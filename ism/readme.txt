@@ -1,0 +1,1 @@
+This NIEM v3.0 IEPD builds off the Super Hero Based IEPD demonstrates how to implement the public version of the Intelligence Community Metadata Standard for Information Security Marking (IC-ISM) v10 in NIEM.  

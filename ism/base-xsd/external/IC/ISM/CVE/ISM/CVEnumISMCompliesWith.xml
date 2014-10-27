@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Notices - Distribution Notice: 
+           This document has been approved for Public Release and is available for use without restriction.
+       --><cve:CVE xmlns:cve="urn:us:gov:ic:cve" xmlns:ddms="urn:us:mil:ces:metadata:ddms:5"
+         xmlns="urn:us:gov:ic:cve"
+         xmlns:ism="urn:us:gov:ic:ism"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         ism:ownerProducer="USA"
+         ism:classification="U"
+         ism:DESVersion="10"
+         ism:resourceElement="true"
+         CVEVersion="1"
+         ism:createDate="2011-09-01"
+         xsi:schemaLocation="urn:us:gov:ic:cve ../Schema/CVEXml.xsd">
+	
+	  <cve:IRM>
+		    <ddms:identifier ddms:qualifier="name" ddms:value="urn:us:gov:ic:cvenum:ism:complieswith"/>
+		    <ddms:title ism:ownerProducer="USA" ism:classification="U">CVEnumISMCompliesWith</ddms:title>
+		    <ddms:description ism:ownerProducer="USA" ism:classification="U">Current rule set names that documents may comply with</ddms:description>
+		
+		    <cve:Created>2010-05-30T16:52:00-04:00</cve:Created>
+		
+		    <ddms:source ddms:value="ISM schema"/>
+		    <ddms:pointOfContact>
+			      <ddms:organization>
+				        <ddms:name>Office IC CIO</ddms:name>
+				        <ddms:email>datastandardssupport@ugov.gov</ddms:email>
+			      </ddms:organization>
+		    </ddms:pointOfContact>
+	  </cve:IRM>
+	
+	  <cve:Enumeration multivalue="true" ism:ownerProducer="USA" ism:classification="U">
+		    <Term ism:classification="U" ism:ownerProducer="USA">
+			      <Value ism:classification="U" ism:ownerProducer="USA">IntelReport</Value>
+			      <ddms:description ism:classification="U" ism:ownerProducer="USA">Document claims compliance with IC rules 
+				that have been encoded into ISM. Currently this includes: ICD-710 POC</ddms:description>
+		    </Term>
+		    <Term ism:classification="U" ism:ownerProducer="USA">
+			      <Value ism:classification="U" ism:ownerProducer="USA">ICDocument</Value>
+			      <ddms:description ism:classification="U" ism:ownerProducer="USA">Document claims compliance with IC rules 
+				that have been encoded into ISM. Currently this includes: ICD-710, DNI-ORCON Memo, and the DNI Revision-Recall Memo </ddms:description>
+		    </Term>
+		    <Term ism:classification="U" ism:ownerProducer="USA">
+			      <Value ism:classification="U" ism:ownerProducer="USA">DoD5230.24</Value>
+			      <ddms:description ism:classification="U" ism:ownerProducer="USA">Document claims compliance with the rules in DoD5230.24 that have been encoded into ISM</ddms:description>
+		    </Term>
+	  </cve:Enumeration>
+	
+</cve:CVE>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:SuperHeroBadGuyAssociation 
+	xmlns:niem-xs="http://release.niem.gov/niem/proxy/xsd/3.0/"
+	xmlns:structures="http://release.niem.gov/niem/structures/3.0/"
+	xmlns:appinfo="http://release.niem.gov/niem/appinfo/3.0/"
+	xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:nc="http://release.niem.gov/niem/niem-core/3.0/"
+	xmlns:tns="http://www.example.org/SuperHero-extension"
+	xsi:schemaLocation="http://www.example.org/SuperHero-extension ../base-xsd/extension/SuperHeroAssociation.xsd ">
+	<nc:AssociationDateRange>
+		<nc:StartDate>
+			<nc:Date>2014-09-10+02:00</nc:Date>
+		</nc:StartDate>
+		<nc:EndDate>
+			<nc:Date>2014-09-10+02:30</nc:Date>
+		</nc:EndDate>
+	</nc:AssociationDateRange>
+	<nc:AssociationDescriptionText>Batman has thwarted numerous attempts at mayhem by The Joker.</nc:AssociationDescriptionText>
+	<tns:BadGuy>
+		<tns:PseudonymText>Joker</tns:PseudonymText>
+	</tns:BadGuy>
+	<tns:SuperHero>
+		<nc:PersonName>
+			<nc:PersonGivenName>Bruce</nc:PersonGivenName>
+			<nc:PersonSurName>Wayne</nc:PersonSurName>
+		</nc:PersonName>
+		<tns:PseudonymText>Batman</tns:PseudonymText>
+	</tns:SuperHero>
+</tns:SuperHeroBadGuyAssociation>

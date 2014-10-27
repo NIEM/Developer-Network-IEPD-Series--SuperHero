@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="test:edh"
+    xmlns:ntk="urn:us:gov:ic:ntk" xmlns:ism="urn:us:gov:ic:ism" xmlns:arh="urn:us:gov:ic:arh"
+    xmlns:edh="urn:us:gov:ic:edh" xmlns:test="test:edh">
+    <xs:import namespace="urn:us:gov:ic:ntk" schemaLocation="../../Schema/NTK/IC-NTK.xsd"/>
+    <xs:import namespace="urn:us:gov:ic:ism" schemaLocation="../../Schema/ISM/IC-ISM.xsd"/>
+    <xs:import namespace="urn:us:gov:ic:arh" schemaLocation="../../Schema/ARH/IC-ARH.xsd"/>
+    <xs:import namespace="urn:us:gov:ic:edh" schemaLocation="../../Schema/IC-EDH/IC-EDH.xsd"/>
+
+    <xs:element name="root">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice>
+                    <xs:element ref="edh:Edh" minOccurs="1" maxOccurs="1"/>
+                    <xs:element ref="edh:ExternalEdh" minOccurs="1" maxOccurs="1"/>
+                </xs:choice>
+            </xs:sequence>
+            <xs:attribute ref="arh:DESVersion"/>
+            <xs:attribute ref="edh:DESVersion"/>
+            <xs:attribute ref="ism:DESVersion"/>
+            <xs:attribute ref="ntk:DESVersion"/>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

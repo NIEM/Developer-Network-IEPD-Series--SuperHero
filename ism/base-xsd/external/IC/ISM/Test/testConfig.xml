@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./testConfig.xsl"?>
+<ISMTestData 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Schema/unitTest.xsd"
+    xmlns:ism="urn:us:gov:ic:ism"
+    ism:DESVersion="9"
+    ism:ownerProducer="USA"
+    ism:classification="U"
+    ism:resourceElement="true"
+    ism:createDate="2011-03-03">
+    <ism:NoticeList ism:classification="U" ism:ownerProducer="USA">
+        <ism:Notice>
+            <ism:NoticeText ism:classification="U" ism:ownerProducer="USA">Sample Attributes do NOT represent actual classified data. IF the attributes themselves or the banner/portion marks are sensitive 
+            that will be represented by the attributes on the test node.</ism:NoticeText>
+        </ism:Notice>
+        <ism:Notice ism:ownerProducer="USA" ism:classification="U" ism:noticeType="RD">
+            <ism:NoticeText ism:classification="U" ism:ownerProducer="USA">Phoney RD notice</ism:NoticeText>
+        </ism:Notice>
+        
+        <ism:Notice ism:ownerProducer="USA" ism:classification="U" ism:noticeType="FRD">
+            <ism:NoticeText ism:classification="U" ism:ownerProducer="USA">Phoney FRD notice</ism:NoticeText>
+        </ism:Notice>
+    </ism:NoticeList>
+    
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>NatoCTS</name>
+        <sampleAttributes ism:classification='TS'
+            ism:ownerProducer='NATO'/>
+        <banner expectFail="false">//COSMIC TOP SECRET</banner>
+        <portion expectFail="false">(//CTS) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>NatoCTSA</name>
+        <sampleAttributes ism:classification='TS'
+            ism:ownerProducer='NATO'
+            ism:nonUSControls='ATOMAL'/>
+        <banner expectFail="false">//COSMIC TOP SECRET//ATOMAL</banner>
+        <portion expectFail="false">(//CTS//ATOMAL) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>NatoCTSAOC</name>
+        <sampleAttributes ism:classification='TS'
+            ism:ownerProducer='NATO'
+            ism:disseminationControls="OC"
+            ism:nonUSControls='ATOMAL'/>
+        <banner expectFail="false">//COSMIC TOP SECRET//ATOMAL//ORCON</banner>
+        <portion expectFail="false">(//CTS//ATOMAL//OC) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>NatoCTSAB</name>
+        <sampleAttributes ism:classification='TS'
+            ism:ownerProducer='NATO'
+            ism:nonUSControls='ATOMAL BOHEMIA'/>
+        <banner expectFail="false">//COSMIC TOP SECRET//ATOMAL/BOHEMIA</banner>
+        <portion expectFail="false">(//CTS//ATOMAL/BOHEMIA) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>NatoCTSB</name>
+        <sampleAttributes ism:classification='TS'
+            ism:ownerProducer='NATO'
+            ism:nonUSControls='BOHEMIA'/>
+        <banner expectFail="false">//COSMIC TOP SECRET//BOHEMIA</banner>
+        <portion expectFail="false">(//CTS//BOHEMIA) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>NatoCTSBALK</name>
+        <sampleAttributes ism:classification='TS'
+            ism:ownerProducer='NATO'
+            ism:nonUSControls='BALK'/>
+        <banner expectFail="false">//COSMIC TOP SECRET//BALK</banner>
+        <portion expectFail="false">(//CTS//BALK) </portion>
+    </test>
+    
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>NatoS</name>
+        <sampleAttributes ism:classification='S'
+            ism:ownerProducer='NATO'/>
+        <banner expectFail="false">//NATO SECRET</banner>
+        <portion expectFail="false">(//NS) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>NatoSAT</name>
+        <sampleAttributes ism:classification='S'
+            ism:ownerProducer='NATO'
+            ism:nonUSControls='ATOMAL'/>
+        <banner expectFail="false">//NATO SECRET//ATOMAL</banner>
+        <portion expectFail="false">(//NS//ATOMAL) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>NatoC</name>
+        <sampleAttributes ism:classification='C'
+            ism:ownerProducer='NATO'/>
+        <banner expectFail="false">//NATO CONFIDENTIAL</banner>
+        <portion expectFail="false">(//NC) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>NatoCA</name>
+        <sampleAttributes ism:classification='C'
+            ism:ownerProducer='NATO'
+            ism:nonUSControls='ATOMAL'/>
+        <banner expectFail="false">//NATO CONFIDENTIAL//ATOMAL</banner>
+        <portion expectFail="false">(//NC//ATOMAL) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>NatoR</name>
+        <sampleAttributes ism:classification='R'
+            ism:ownerProducer='NATO'/>
+        <banner expectFail="false">//NATO RESTRICTED</banner>
+        <portion expectFail="false">(//NR) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>NatoU</name>
+        <sampleAttributes ism:classification='U'
+            ism:ownerProducer='NATO'/>
+        <banner expectFail="false">//NATO UNCLASSIFIED</banner>
+        <portion expectFail="false">(//NU) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>HCS</name>
+        <sampleAttributes ism:classification='TS'
+            ism:ownerProducer='USA'
+            ism:SCIcontrols="HCS"
+            ism:disseminationControls="NF"/>
+        <banner expectFail="false">TOP SECRET//HCS//NOFORN</banner>
+        <portion expectFail="false">(TS//HCS//NF) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>SITK</name>
+        <sampleAttributes ism:classification='TS'
+            ism:ownerProducer='USA'
+            ism:SCIcontrols="SI TK"/>
+        <banner expectFail="false">TOP SECRET//SI/TK</banner>
+        <portion expectFail="false">(TS//SI/TK) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>TS</name>
+        <sampleAttributes ism:classification='TS'
+            ism:ownerProducer='USA'/>
+        <banner expectFail="false">TOP SECRET</banner>
+        <portion expectFail="false">(TS) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>S</name>
+        <sampleAttributes ism:classification='S'
+            ism:ownerProducer='USA'/>
+        <banner expectFail="false">SECRET</banner>
+        <portion expectFail="false">(S) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>C</name>
+        <sampleAttributes ism:classification='C'
+            ism:ownerProducer='USA'/>
+        <banner expectFail="false">CONFIDENTIAL</banner>
+        <portion expectFail="false">(C) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>SI-G</name>
+        <sampleAttributes ism:classification='TS'
+            ism:ownerProducer='USA'
+            ism:SCIcontrols="SI SI-G SI-G-ACDE TK"
+            ism:disseminationControls="OC"/>
+        <banner expectFail="false">TOP SECRET//SI-G ACDE/TK//ORCON</banner>
+        <portion expectFail="false">(TS//SI-G ACDE/TK//OC) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>RSV-ABC-DEF</name>
+        <sampleAttributes ism:classification='TS'
+            ism:ownerProducer='USA'
+            ism:SCIcontrols="RSV RSV-ABC RSV-DEF TK"
+            />
+        <banner expectFail="false">TOP SECRET//RSV-ABC-DEF/TK</banner>
+        <portion expectFail="false">(TS//RSV-ABC-DEF/TK) </portion>
+    </test>
+    
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>SI-G-ABCD</name>
+        <sampleAttributes ism:classification='TS'
+            ism:ownerProducer='USA'
+            ism:SCIcontrols="SI SI-G SI-G-ABCD"
+            ism:disseminationControls="OC"/>
+        <banner expectFail="false">TOP SECRET//SI-G ABCD//ORCON</banner>
+        <portion expectFail="false">(TS//SI-G ABCD//OC) </portion>
+    </test>
+    
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>SI-G-ABCD</name>
+        <sampleAttributes ism:classification='TS'
+            ism:ownerProducer='USA'
+            ism:SCIcontrols="SI SI-G SI-G-ABCD SI-G-ACDE"
+            ism:disseminationControls="OC"/>
+        <banner expectFail="false">TOP SECRET//SI-G ABCD ACDE//ORCON</banner>
+        <portion expectFail="false">(TS//SI-G ABCD ACDE//OC) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>SI-G-ABCD-TK</name>
+        <sampleAttributes ism:classification='TS'
+            ism:ownerProducer='USA'
+            ism:SCIcontrols="SI SI-G SI-G-ABCD SI-G-ACDE TK"
+            ism:disseminationControls="OC"/>
+        <banner expectFail="false">TOP SECRET//SI-G ABCD ACDE/TK//ORCON</banner>
+        <portion expectFail="false">(TS//SI-G ABCD ACDE/TK//OC) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>FGI-AUS-SI</name>
+        <sampleAttributes ism:classification='TS'
+            ism:ownerProducer='USA'
+            ism:SCIcontrols="SI"
+            ism:FGIsourceOpen="AUS"
+            ism:disseminationControls="OC"/>
+        <banner expectFail="false">TOP SECRET//SI//FGI AUS//ORCON</banner>
+        <portion expectFail="false">(TS//SI//FGI AUS//OC) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>AUS-SI</name>
+        <sampleAttributes ism:classification='TS'
+            ism:ownerProducer='AUS'
+            ism:SCIcontrols="SI"/>
+        <banner expectFail="false">//AUS TOP SECRET//SI</banner>
+        <portion expectFail="false">(//AUS TS//SI) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>FOUO</name>
+        <sampleAttributes ism:classification='U'
+            ism:ownerProducer='USA'
+            ism:disseminationControls="FOUO"/>
+        <banner expectFail="false">UNCLASSIFIED//FOUO</banner>
+        <portion expectFail="false">(U//FOUO) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>RS</name>
+        <sampleAttributes ism:classification='S'
+            ism:ownerProducer='USA'
+            ism:disseminationControls="RS"/>
+        <banner expectFail="false">SECRET//RSEN</banner>
+        <portion expectFail="false">(S//RS) </portion>
+    </test>
+    
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>UCNI</name>
+        <sampleAttributes ism:classification='U'
+            ism:ownerProducer='USA'
+            ism:atomicEnergyMarkings="UCNI"/>
+        <banner expectFail="false">UNCLASSIFIED//DOE UCNI</banner>
+        <portion expectFail="false">(U//UCNI) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>DCNI</name>
+        <sampleAttributes ism:classification='U'
+            ism:ownerProducer='USA'
+            ism:atomicEnergyMarkings="DCNI"/>
+        <banner expectFail="false">UNCLASSIFIED//DOD UCNI</banner>
+        <portion expectFail="false">(U//DCNI) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>RD-DCNI</name>
+        <sampleAttributes ism:classification='S'
+            
+            ism:ownerProducer='USA'
+            ism:atomicEnergyMarkings="RD DCNI"/>
+        <banner expectFail="false">SECRET//RD/DOD UCNI</banner>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>RD</name>
+        <sampleAttributes ism:classification='S'
+            ism:ownerProducer='USA'
+            ism:atomicEnergyMarkings="RD"/>
+        <banner expectFail="false">SECRET//RD</banner>
+        <portion expectFail="false">(S//RD) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>FRD</name>
+        <sampleAttributes ism:classification='S'
+            ism:ownerProducer='USA'
+            ism:atomicEnergyMarkings="FRD"/>
+        <banner expectFail="false">SECRET//FRD</banner>
+        <portion expectFail="false">(S//FRD) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>FRD-SIGMA1</name>
+        <sampleAttributes ism:classification='S'
+            ism:ownerProducer='USA'
+            ism:atomicEnergyMarkings="FRD FRD-SG-14"/>
+        <banner expectFail="false">SECRET//FRD-SIGMA 14</banner>
+        <portion expectFail="false">(S//FRD-SG 14) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>FRD-SIGMA1-2-RD-CNWDI-SIGMA-5</name>
+        <sampleAttributes ism:classification='S'
+            ism:ownerProducer='USA'
+            ism:atomicEnergyMarkings="RD RD-CNWDI RD-SG-14 FRD FRD-SG-14 FRD-SG-20"/>
+        <banner expectFail="false">SECRET//RD-CNWDI-SIGMA 14/FRD-SIGMA 14 20</banner>
+        <portion expectFail="false">(S//RD-CNWDI-SG 14/FRD-SG 14 20) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>RD</name>
+        <sampleAttributes ism:classification='S'
+            ism:ownerProducer='USA'
+            ism:atomicEnergyMarkings="RD"/>
+        <banner expectFail="false">SECRET//RD</banner>
+        <portion expectFail="false">(S//RD) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>RD-SIGMA1</name>
+        <sampleAttributes ism:classification='S'
+            ism:ownerProducer='USA'
+            ism:atomicEnergyMarkings="RD RD-SG-14"/>
+        <banner expectFail="false">SECRET//RD-SIGMA 14</banner>
+        <portion expectFail="false">(S//RD-SG 14) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>RD-SIGMA1-2</name>
+        <sampleAttributes ism:classification='S'
+            ism:ownerProducer='USA'
+            ism:atomicEnergyMarkings="RD RD-SG-14 RD-SG-20"/>
+        <banner expectFail="false">SECRET//RD-SIGMA 14 20</banner>
+        <portion expectFail="false">(S//RD-SG 14 20) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>RD-SIGMA1-2-FRD-SIGMA1-2</name>
+        <sampleAttributes ism:classification='S'
+            ism:ownerProducer='USA'
+            ism:atomicEnergyMarkings="RD RD-SG-14 RD-SG-20 FRD FRD-SG-14 FRD-SG-20"/>
+        <banner expectFail="false">SECRET//RD-SIGMA 14 20/FRD-SIGMA 14 20</banner>
+        <portion expectFail="false">(S//RD-SG 14 20/FRD-SG 14 20) </portion>
+    </test>
+    
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>RD-CNWDI-SIGMA1-2-FRD-SIGMA1-2</name>
+        <sampleAttributes ism:classification='S'
+            ism:ownerProducer='USA'
+            ism:atomicEnergyMarkings="RD RD-CNWDI RD-SG-14 RD-SG-20 FRD FRD-SG-14 FRD-SG-20"/>
+        <banner expectFail="false">SECRET//RD-CNWDI-SIGMA 14 20/FRD-SIGMA 14 20</banner>
+        <portion expectFail="false">(S//RD-CNWDI-SG 14 20/FRD-SG 14 20) </portion>
+    </test>
+    
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>DISPLAY-ONLY-AFG</name>
+        <sampleAttributes ism:classification='S'
+            ism:ownerProducer='USA'
+            ism:disseminationControls="DISPLAYONLY"
+            ism:displayOnlyTo="AFG"/>
+        <banner expectFail="false">SECRET//DISPLAY ONLY AFG</banner>
+        <portion expectFail="false">(S//DISPLAY ONLY AFG) </portion>
+    </test>
+    
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>DISPLAY-ONLY-AFG-IRQ-REL-NATO-AUS</name>
+        <sampleAttributes ism:classification='S'
+            ism:ownerProducer='USA'
+            ism:disseminationControls="REL DISPLAYONLY"
+            ism:releasableTo="USA AUS NATO"
+            ism:displayOnlyTo="AFG IRQ"/>
+        <banner expectFail="false">SECRET//REL TO USA, AUS, NATO/DISPLAY ONLY AFG, IRQ</banner>
+        <portion expectFail="false">(S//REL TO USA, AUS, NATO/DISPLAY ONLY AFG, IRQ) </portion>
+    </test>
+    
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>REL-NATO-AUS</name>
+        <sampleAttributes ism:classification='S'
+            ism:ownerProducer='USA'
+            ism:disseminationControls="REL"
+            ism:releasableTo="USA AUS NATO"/>
+        <banner expectFail="false">SECRET//REL TO USA, AUS, NATO</banner>
+        <portion expectFail="false">(S//REL TO USA, AUS, NATO) </portion>
+    </test>
+    
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>USA-AUS-NATO-EYES-ONLY</name>
+        <sampleAttributes ism:classification='S'
+            ism:ownerProducer='USA'
+            ism:disseminationControls="EYES"
+            ism:releasableTo="USA AUS NATO"/>
+        <banner expectFail="false">SECRET//USA/AUS/NATO EYES ONLY</banner>
+        <portion expectFail="false">(S//USA/AUS/NATO EYES ONLY) </portion>
+    </test>
+    
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>SAR-ABC-123</name>
+        <sampleAttributes ism:classification='S'
+            ism:ownerProducer='USA'
+            ism:SARIdentifier="ABC DEF" />
+        <banner expectFail="false">SECRET//SAR-ABC/DEF</banner>
+        <portion expectFail="false">(S//SAR-ABC/DEF) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>JOINT</name>
+        <sampleAttributes ism:classification='S'
+            ism:ownerProducer='DEU USA'
+            ism:disseminationControls="REL"
+            ism:releasableTo="USA DEU NATO" />
+        <banner expectFail="false">//JOINT SECRET DEU USA//REL TO USA, DEU, NATO</banner>
+        <portion expectFail="false">(//JOINT S DEU USA//REL TO USA, DEU, NATO) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>SAR-JP_SP-A1</name>
+        <sampleAttributes ism:classification='S'
+            ism:ownerProducer='USA'
+            ism:SARIdentifier="JUNIOR_PROM SOPHOMORE_DANCE SOPHOMORE_DANCE-A1" />
+        <banner expectFail="false">SECRET//SAR-JUNIOR PROM/SOPHOMORE DANCE-A1</banner>
+        <portion expectFail="false">(S//SAR-JUNIOR PROM/SOPHOMORE DANCE-A1) </portion>
+        <authority expectFail="false">(&#xA0;WARNING! This document does not contain required markings for either an originally or derivatively classified document.&#xA0;)|(&#xA0;WARNING! This document does not contain required declassification instructions or markings.&#xA0;)</authority>
+    </test>
+   
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>SAR-JP_SP-A1</name>
+        <sampleAttributes ism:classification='S'
+            ism:ownerProducer='USA'
+            ism:SARIdentifier="HOMECOMING_DANCE PROM_TUX PROM_TUX-JR PROM_TUX-JR-A16 PROM_TUX-JR-A17 PROM_TUX-SR PROM_TUX-SR-A17 PROM_TUX-SR-A18" />
+        <banner expectFail="false">SECRET//SAR-HOMECOMING DANCE/PROM TUX-JR A16 A17-SR A17 A18</banner>
+        <portion expectFail="false">(S//SAR-HOMECOMING DANCE/PROM TUX-JR A16 A17-SR A17 A18) </portion>
+        <authority expectFail="false">(&#xA0;WARNING! This document does not contain required markings for either an originally or derivatively classified document.&#xA0;)|(&#xA0;WARNING! This document does not contain required declassification instructions or markings.&#xA0;)</authority>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>Authority-50X1-HUM</name>
+        <sampleAttributes ism:classification='TS'
+            ism:ownerProducer='USA'
+            ism:classifiedBy="John Doe, Director CIA"
+            ism:classificationReason="1.4c"
+            ism:declassException="50X1-HUM"
+        />
+        <banner expectFail="false">TOP SECRET</banner>
+        <portion expectFail="false">(TS) </portion>
+        <authority expectFail="false">Classified by: John Doe, Director CIA|Reason: 1.4c|Declassify on: 50X1-HUM</authority>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>Authority-50X1-HUM</name>
+        <sampleAttributes ism:classification='TS'
+            ism:ownerProducer='USA'
+            ism:classifiedBy="John Doe, Director CIA"
+            ism:classificationReason="1.4c"
+            ism:declassException="50X1-HUM"
+        />
+        <banner expectFail="false">TOP SECRET</banner>
+        <portion expectFail="false">(TS) </portion>
+        <authority expectFail="false">Classified by: John Doe, Director CIA|Reason: 1.4c|Declassify on: 50X1-HUM</authority>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>Authority-50X2-WMD</name>
+        <sampleAttributes ism:classification='TS'
+            ism:ownerProducer='USA'
+            ism:classifiedBy="John Doe, Director CIA"
+            ism:classificationReason="1.4c"
+            ism:declassException="50X2-WMD"
+        />
+        <banner expectFail="false">TOP SECRET</banner>
+        <portion expectFail="false">(TS) </portion>
+        <authority expectFail="false">Classified by: John Doe, Director CIA|Reason: 1.4c|Declassify on: 50X2-WMD</authority>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>Declass-DerivitivelyClassified-MultipleSources</name>
+        <sampleAttributes ism:classification='TS'
+            ism:ownerProducer='USA'
+            ism:derivativelyClassifiedBy="John Doe, JITF-CT DIA"
+            ism:classificationReason="NDP-1"
+            ism:derivedFrom="Multiple Sources"
+            ism:declassDate="2035-09-11"
+        />
+        <banner expectFail="false">TOP SECRET</banner>
+        <portion expectFail="false">(TS) </portion>
+        <authority expectFail="false">Classified by: John Doe, JITF-CT DIA|Derived from: Multiple Sources|Reason: NDP-1|Declassify on: September 11, 2035</authority>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>Authority-50X1-HUM</name>
+        <sampleAttributes ism:classification='TS'
+            ism:ownerProducer='USA'
+            ism:derivativelyClassifiedBy="John Doe, JITF-CT DIA"
+            ism:classificationReason="NDP-1"
+            ism:derivedFrom="Multiple Sources"
+            ism:declassException="50X1-HUM"
+            ism:declassDate="2050-01-01"
+        />
+        <banner expectFail="false">TOP SECRET</banner>
+        <portion expectFail="false">(TS) </portion>
+        <authority expectFail="false">Classified by: John Doe, JITF-CT DIA|Derived from: Multiple Sources|Reason: NDP-1|Declassify on: 50X1-HUM, January 1, 2050</authority>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>Authority-AEA</name>
+        <sampleAttributes ism:classification='TS'
+            ism:ownerProducer='USA'
+            ism:derivativelyClassifiedBy="John Doe, JITF-CT DIA"
+            ism:classificationReason="NDP-1"
+            ism:derivedFrom="Multiple Sources"
+            ism:declassException="AEA"
+        />
+        <banner expectFail="false">TOP SECRET</banner>
+        <portion expectFail="false">(TS) </portion>
+        <authority expectFail="false">Classified by: John Doe, JITF-CT DIA|Derived from: Multiple Sources|Reason: NDP-1|Declassify on: Not Applicable to RD/FRD/TFNI portions. See source list for NSI portions.</authority>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>Authority-NATO</name>
+        <sampleAttributes ism:classification='TS'
+            ism:ownerProducer='USA'
+            ism:derivativelyClassifiedBy="John Doe, JITF-CT DIA"
+            ism:classificationReason="NDP-1"
+            ism:derivedFrom="Multiple Sources"
+            ism:declassException="NATO"
+        />
+        <banner expectFail="false">TOP SECRET</banner>
+        <portion expectFail="false">(TS) </portion>
+        <authority expectFail="false">Classified by: John Doe, JITF-CT DIA|Derived from: Multiple Sources|Reason: NDP-1|Declassify on: Not Applicable to NATO portions. See source list for NSI portions.</authority>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>Authority-NATO-AEA</name>
+        <sampleAttributes ism:classification='TS'
+            ism:ownerProducer='USA'
+            ism:derivativelyClassifiedBy="John Doe, JITF-CT DIA"
+            ism:classificationReason="NDP-1"
+            ism:derivedFrom="Multiple Sources"
+            ism:declassException="NATO-AEA"
+        />
+        <banner expectFail="false">TOP SECRET</banner>
+        <portion expectFail="false">(TS) </portion>
+        <authority expectFail="false">Classified by: John Doe, JITF-CT DIA|Derived from: Multiple Sources|Reason: NDP-1|Declassify on: Not Applicable to RD/FRD/TFNI and NATO portions. See source list for NSI portions.</authority>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>ACCM</name>
+        <sampleAttributes ism:classification='TS'
+            ism:ownerProducer='USA'
+            ism:derivativelyClassifiedBy="John Doe, JITF-CT DIA"
+            ism:classificationReason="NDP-1"
+            ism:derivedFrom="Multiple Sources"
+            ism:nonICmarkings="ACCM-TEA_LEAF ACCM-FICTICIOUS_EFFORT"
+            ism:declassDate="2050-01-01"
+        />
+        <banner expectFail="false">TOP SECRET//TEA LEAF/FICTICIOUS EFFORT</banner>
+        <portion expectFail="false">(TS//TEA LEAF/FICTICIOUS EFFORT) </portion>
+        <authority expectFail="false">Classified by: John Doe, JITF-CT DIA|Derived from: Multiple Sources|Reason: NDP-1|Declassify on: January 1, 2050</authority>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>SI-G-ABCD-TK-SAP-ACCM</name>
+        <sampleAttributes ism:classification='TS'
+            ism:ownerProducer='USA'
+            ism:SCIcontrols="SI SI-G SI-G-ABCD SI-G-ACDE TK"
+            ism:SARIdentifier="ABC DEF"
+            ism:nonICmarkings="ACCM-TEA_LEAF ACCM-FICTICIOUS_EFFORT"
+            ism:disseminationControls="OC"/>
+    		<banner expectFail="false">TOP SECRET//SI-G ABCD ACDE/TK//SAR-ABC/DEF//ORCON//TEA LEAF/FICTICIOUS EFFORT</banner>
+    		<portion expectFail="false">(TS//SI-G ABCD ACDE/TK//SAR-ABC/DEF//OC//TEA LEAF/FICTICIOUS EFFORT) </portion>
+    </test>
+    <test ism:ownerProducer="USA" ism:classification="U">
+        <name>SCI-SAP-AEM-ACCM-DISSEM</name>
+        <sampleAttributes ism:classification='TS'
+            ism:ownerProducer='USA'
+            ism:SCIcontrols="SI SI-G SI-G-ABCD SI-G-ACDE TK"
+            ism:SARIdentifier="ABC DEF"
+            ism:atomicEnergyMarkings="RD"
+            ism:declassException="AEA"
+            ism:nonICmarkings="ACCM-TEA_LEAF ACCM-FICTICIOUS_EFFORT"
+            ism:disseminationControls="OC"/>
+    		<banner expectFail="false">TOP SECRET//SI-G ABCD ACDE/TK//SAR-ABC/DEF//RD//ORCON//TEA LEAF/FICTICIOUS EFFORT</banner>
+    		<portion expectFail="false">(TS//SI-G ABCD ACDE/TK//SAR-ABC/DEF//RD//OC//TEA LEAF/FICTICIOUS EFFORT) </portion>
+    </test>
+</ISMTestData>

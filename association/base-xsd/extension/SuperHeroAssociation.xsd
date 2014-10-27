@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="1.0" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/SuperHero-extension" 
+	xmlns:tns="http://www.example.org/SuperHero-extension"
+	xmlns:nc="http://release.niem.gov/niem/niem-core/3.0/" 
+	xmlns:niem-xsd="http://release.niem.gov/niem/proxy/xsd/3.0/"
+	ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/#ExtensionSchemaDocument"
+	xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/"
+	elementFormDefault="qualified">
+
+	<xs:annotation>
+		<xs:documentation>This IEPD shows how to create associations. 
+			The context of this IEPD is based on Superheros.
+		</xs:documentation>
+	</xs:annotation>
+	
+	<xs:import namespace="http://release.niem.gov/niem/niem-core/3.0/"
+		schemaLocation="../niem/niem-core/3.0/niem-core.xsd" />
+	<xs:import schemaLocation="../niem/proxy/xsd/3.0/xs.xsd"
+		namespace="http://release.niem.gov/niem/proxy/xsd/3.0/"></xs:import>
+	
+	<xs:element name="SuperHero" type="nc:PersonType">
+		<xs:annotation>
+			<xs:documentation>A person with super human abilities generally used to help others.
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	
+	<xs:element name="PseudonymText" type="niem-xsd:string" substitutionGroup="nc:PersonAugmentationPoint" >
+		<xs:annotation>
+			<xs:documentation>The publicly known name of the super hero.
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	
+	<xs:complexType name="SuperHeroBadGuyAssociationType">
+		<xs:annotation>
+			<xs:documentation>An association type describing an interaction
+				between a SuperHero and a Bad Guy.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="nc:AssociationType">
+				<xs:sequence>
+					<xs:element ref="tns:BadGuy" minOccurs="1" maxOccurs="1" />
+					<xs:element ref="tns:SuperHero" minOccurs="1" maxOccurs="1" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="BadGuy" type="nc:PersonType">
+		<xs:annotation>
+			<xs:documentation>The guy doing bad things.
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="SuperHeroBadGuyAssociation" type="tns:SuperHeroBadGuyAssociationType">
+		<xs:annotation>
+			<xs:documentation>A relationship between a SuperHero and a Bad Guy.
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+</xs:schema>

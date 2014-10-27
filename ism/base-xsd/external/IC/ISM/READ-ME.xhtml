@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>ISM Package Description</title>
+    </head>
+    <body>
+        <h1>ISM Package Description</h1>
+        <p>Information Security Markings (ISM) consists of many files all packaged here for you. This is a simple guide to the
+            layout of this package. Before attempting to follow the links in this guide, please ensure that you have extracted the files from the zip file; 
+            otherwise, the links will not work. </p>
+        <ul>
+            <li><p>CVE</p><p>The collection of Controlled Vocabulary Enumerations (CVE) that this specification is dependent on. Each CVE directory has the actual CVE files as XML and also has a PDF rendering of them in the Documentation folder.</p></li>
+            <li><p>DES</p><p>The Data Encoding Specification(s). This includes all of the DES or other specifications that ISM is dependent on. Each includes the document itself and if applicable, the signature memo associated with it.</p>
+                <ul>
+                   <li>ISM
+                        <ul>
+                            <li><a href="./DES/ISM/DesIsmXml.pdf">DesIsmXml.pdf</a></li>
+														<li><a href="./DES/ISM/DesIsmXmlAnnex.pdf">DesIsmXmlAnnex.pdf</a></li>
+                            <li><a href="./DES/ISM/SignatureMemo.pdf">SignatureMemo.pdf</a></li>
+                        </ul>
+                    </li>
+                 </ul>
+            </li>
+            <li><p>Examples</p><p>Collection of example instance documents for this specification and if available, for each specification this one depends on.</p></li>
+            <li><p>Schema</p><p>A complete set of XSD files to implement this specification including all required dependencies. Top level schema file is <a href="./Schema/ISM">IC-ISM.xsd.</a></p></li>
+            <li><p>SchemaGuide</p><p>A generated set of documentation for the Schema. Includes many element definitions and diagrams showing the structures. They are generated completely from the .xsd files. The top of SchemaGuide is <a href="./SchemaGuide/index.html">index.html.</a></p></li>
+            <li><p>Schematron</p><p>Collection of constraint rules applicable to this DES. These rules depend on the CVEs being located at the "correct" relative path they are in this package. Many of the dependent DES have applicable constraint rules; each one is documented separately. Each DES has 3 main files.</p>
+							<ul>
+                <li><p>xxx_Rules.pdf</p><p>A generated PDF collection of all the constraint rules.
+                    They are actually many individual .sch files. This file is a more convenient format to read but is not useful for execution of the rules.</p></li>
+                <li><p>xxx_XML.sch</p><p>The top level .sch file that includes all of the others for the particular DES.</p></li>
+                <li><p>xxx_XML.xsl</p><p>A pre "compiled" version of the .sch file ready for execution with any XSLT2 capable engine.</p></li>
+            </ul>
+							<p>Applicable constraint rules for this DES include the following:</p>
+                <ul>
+                   <li>ISM
+                        <ul>
+                            <li><a href="./Schematron/ISM/ISM_Rules.pdf">ISM_Rules.pdf</a></li>
+                            <li><a href="./Schematron/ISM">ISM_XML.sch</a></li>
+                            <li><a href="./Schematron/ISM">ISM_XML.xsl</a></li>
+                        </ul>
+                    </li>
+                 </ul>
+            </li>
+            <li><p><a href="./manifest.md5">manifest.md5</a></p><p>This file contains an MD5 checksum of every file in the package. It can be used to determine if any of the files were corrupted in unzipping or if you have modified a file.</p></li>
+        </ul>
+    </body>
+</html>

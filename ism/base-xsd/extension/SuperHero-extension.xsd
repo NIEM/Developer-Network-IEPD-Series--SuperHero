@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="1.0" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/SuperHero-extension" 
+	xmlns:tns="http://www.example.org/SuperHero-extension"
+	xmlns:nc="http://release.niem.gov/niem/niem-core/3.0/" 
+	xmlns:ism="urn:us:gov:ic:ism"
+	ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/#ExtensionSchemaDocument"
+	xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/"
+	elementFormDefault="qualified">
+
+	<xs:annotation>
+		<xs:documentation>This IEPD shows how to use IC-ISM markings.</xs:documentation>
+	</xs:annotation>
+	
+	<xs:import namespace="http://release.niem.gov/niem/niem-core/3.0/"
+		schemaLocation="../niem/niem-core/3.0/niem-core.xsd" />
+	
+	<xs:import namespace="urn:us:gov:ic:ism" schemaLocation="../external/IC/ISM/Schema/ISM/IC-ISM.xsd"/>
+
+	<xs:element name="SuperHero" type="nc:PersonType">
+		<xs:annotation>
+			<xs:documentation> A person with super human abilities generally used
+				to help others.
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+
+</xs:schema>

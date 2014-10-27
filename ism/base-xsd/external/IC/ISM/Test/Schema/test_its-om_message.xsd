@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Notices - distEditionBlockReplace-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="test_message"
+    xmlns:test_message="test_message">
+    <xs:element name="message_root">
+        <xs:complexType>
+            <xs:sequence minOccurs="1" maxOccurs="1">
+                <xs:element ref="test_message:message_header" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="test_message:message_body" minOccurs="1" maxOccurs="1" />
+            </xs:sequence>
+            <xs:attribute name="message_attr"/>
+        </xs:complexType>
+    </xs:element>
+        
+    <xs:element name="message_header" type="xs:string"/>
+    <xs:element name="message_body" type="xs:string"/>
+</xs:schema>

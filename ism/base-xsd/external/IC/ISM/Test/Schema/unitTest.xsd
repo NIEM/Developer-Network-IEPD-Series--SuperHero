@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:ism="urn:us:gov:ic:ism">
+
+  <!-- ************************************************************* -->
+  <!-- IMPORT IC INFORMATION SECURITY MARKING ATTRIBUTES ........... -->
+  <!-- ************************************************************* -->
+  <xsd:import namespace="urn:us:gov:ic:ism" schemaLocation="../../Schema/ISM/IC-ISM.xsd"/>
+  
+  
+  
+  <xsd:element name="ISMTestData">
+    <xsd:complexType>
+      <xsd:sequence minOccurs="1" maxOccurs="1">
+        <xsd:element ref="ism:NoticeList" minOccurs="0" maxOccurs="1"/>
+        <xsd:element ref="test" minOccurs="1" maxOccurs="unbounded" />
+      </xsd:sequence>
+      <xsd:attributeGroup ref="ism:ISMRootNodeAttributeGroup"/>
+      <xsd:attributeGroup ref="ism:ResourceNodeAttributeGroup"/>
+    </xsd:complexType>
+  </xsd:element>
+  
+  <xsd:element name="test">
+    <xsd:complexType>
+      <xsd:all minOccurs="1" maxOccurs="1">
+        <xsd:element ref="name" minOccurs="1" maxOccurs="1"/>
+        <xsd:element ref="sampleAttributes" minOccurs="1" maxOccurs="1"/>
+        <xsd:element ref="ism:NoticeList" minOccurs="0" maxOccurs="1" />
+        <xsd:element ref="banner" minOccurs="0" maxOccurs="1"/>
+        <xsd:element ref="portion" minOccurs="0" maxOccurs="1"/>
+        <xsd:element ref="authority" minOccurs="0" maxOccurs="1"/>
+        <xsd:element ref="description" minOccurs="0" maxOccurs="1"/>        
+      </xsd:all>
+      <xsd:attributeGroup ref="ism:SecurityAttributesGroup"/>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="name" type="xsd:NCName"/>
+  <xsd:element name="sampleAttributes">
+    <xsd:complexType>
+     <xsd:attributeGroup ref="ism:SecurityAttributesGroup"/>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="banner">
+    <xsd:complexType mixed="true">
+      <xsd:attribute name="expectFail" use="required" type="xsd:boolean"/>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="portion">
+    <xsd:complexType mixed="true">
+      <xsd:attribute name="expectFail" use="required" type="xsd:boolean"/>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="authority" >
+    <xsd:complexType mixed="true">
+      <xsd:attribute name="expectFail" use="required" type="xsd:boolean"/>
+    </xsd:complexType>
+  </xsd:element>
+  
+  <xsd:element name="description" type="ism:ShortStringWithSecurityType"/>
+  
+  
+</xsd:schema>

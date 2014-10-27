@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c:Catalog
+   xmlns:nc="http://release.niem.gov/niem/niem-core/3.0/"
+   xmlns:proj="http://www.example.org/SuperHero-extension"
+   xmlns:c="http://reference.niem.gov/niem/resource/mpd/catalog/3.0/"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://reference.niem.gov/niem/resource/mpd/catalog/3.0/ mpd-catalog-3.0.xsd"
+   xmlns="http://reference.niem.gov/niem/resource/mpd/catalog/3.0/">
+   
+   <c:MPD c:mpdName="superhero-iepd" c:mpdVersionID="1" c:mpdClassURIList="iepd"
+      c:mpdURI="http://www.example.org/niem/iepds/superhero/5">
+      <nc:DescriptionText>This IEPD shows how to create local terminology.  The context of this IEPD is based on Superheros.</nc:DescriptionText>
+      <c:MPDInformation>
+         <c:AuthoritativeSource>
+            <nc:EntityOrganization>
+               <nc:OrganizationName>Joint Staff J6, MilOps Domain Steward</nc:OrganizationName>
+               <nc:OrganizationPrimaryContactInformation>
+                  <nc:ContactWebsiteURI>http://www.example.org/</nc:ContactWebsiteURI>
+               </nc:OrganizationPrimaryContactInformation>
+            </nc:EntityOrganization>
+         </c:AuthoritativeSource>
+         <c:CreationDate>2014-08-19</c:CreationDate>
+         <c:StatusText>Beta</c:StatusText>
+      </c:MPDInformation>
+      <c:IEPConformanceTarget>
+         <c:HasDocumentElement c:qualifiedNameList="proj:SuperHero"/>
+         <c:IEPSampleXMLDocument c:pathURI="./iep-sample/SuperHero.xml"/>
+      </c:IEPConformanceTarget>
+      <c:ReadMe c:pathURI="readme.txt"/>
+      <c:XMLCatalog c:pathURI="base-xsd/niem/xml-catalog.xml"/>
+      <c:Wantlist c:pathURI="base-xsd/niem/wantlist.xml"/>
+      <c:IEPSampleXMLDocument c:pathURI="iep-sample/SuperHero.xml"/>
+      <c:ExtensionSchemaDocument c:pathURI="base-xsd/extension/SuperHero-extension.xsd"/>
+      
+      <c:SubsetSchemaDocument c:pathURI="base-xsd/niem/appinfo/3.0/appinfo.xsd"/>
+      <c:SubsetSchemaDocument c:pathURI="base-xsd/niem/conformanceTargets/3.0/conformanceTargets.xsd"/>
+      <c:SubsetSchemaDocument c:pathURI="base-xsd/niem/localTerminology/3.0/localTerminology.xsd"/>
+      <c:SubsetSchemaDocument c:pathURI="base-xsd/niem/niem-core/3.0/niem-core.xsd"/>
+      <c:SubsetSchemaDocument c:pathURI="base-xsd/niem/proxy/xsd/3.0/xs.xsd"/>
+      <c:SubsetSchemaDocument c:pathURI="base-xsd/niem/structures/3.0/structures.xsd"/>
+   </c:MPD>
+</c:Catalog>

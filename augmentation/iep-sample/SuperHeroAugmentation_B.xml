@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nc:Person xmlns:tns="http://www.example.org/SuperHero-extension"
+ xmlns:nc="http://release.niem.gov/niem/niem-core/3.0/"
+ xmlns:niem-xsd="http://release.niem.gov/niem/proxy/xsd/3.0/"
+ xmlns:structures="http://release.niem.gov/niem/structures/3.0/"
+ xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/"
+ xmlns:appinfo="http://release.niem.gov/niem/appinfo/3.0/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://release.niem.gov/niem/niem-core/3.0/ ../base-xsd/extension/SuperHero-extension_B.xsd">
+     <nc:PersonName>
+        <nc:PersonGivenName>Bruce</nc:PersonGivenName>
+        <nc:PersonSurName>Wayne</nc:PersonSurName>
+    </nc:PersonName>
+    <tns:PersonAugmentation>
+        <tns:PersonClothingDescriptionText>Blue and gray cape, utility belt and face covering with bat like ears.</tns:PersonClothingDescriptionText>
+        <tns:PersonSkillDescriptionText>Intellect, detective skills, science and technology, wealth, physical prowess, and intimidation in his war on crime</tns:PersonSkillDescriptionText>
+    </tns:PersonAugmentation>
+ </nc:Person>

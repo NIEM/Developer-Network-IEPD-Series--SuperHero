@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:JusticeLeagueShows xmlns:niem-xs="http://release.niem.gov/niem/proxy/xsd/3.0/"
+ xmlns:structures="http://release.niem.gov/niem/structures/3.0/"
+ xmlns:appinfo="http://release.niem.gov/niem/appinfo/3.0/"
+ xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:nc="http://release.niem.gov/niem/niem-core/3.0/"
+ xmlns:tns="http://www.example.org/SuperHero-extension"
+ xsi:schemaLocation="http://www.example.org/SuperHero-extension ../base-xsd/extension/SuperHero-extension.xsd">
+    <tns:JusticeLeagueOfAmericaSuperHeroList>
+        <tns:SuperHero structures:id="SH1">
+            <nc:PersonName>
+                <nc:PersonGivenName>Kal</nc:PersonGivenName>
+                <nc:PersonSurName>El</nc:PersonSurName>
+            </nc:PersonName>
+            <nc:PersonName>
+                <nc:PersonGivenName>Clark</nc:PersonGivenName>
+                <nc:PersonSurName>Kent</nc:PersonSurName>
+            </nc:PersonName>
+            <tns:PseudonymText>Superman</tns:PseudonymText>
+        </tns:SuperHero>
+        <tns:SuperHero structures:id="SH2">
+            <nc:PersonName>
+                <nc:PersonGivenName>Bruce</nc:PersonGivenName>
+                <nc:PersonSurName>Wayne</nc:PersonSurName>
+            </nc:PersonName>
+            <tns:PseudonymText>Batman</tns:PseudonymText>
+        </tns:SuperHero>
+        <tns:SuperHero structures:id="SH3">
+            <nc:PersonName>
+                <nc:PersonGivenName>Barry</nc:PersonGivenName>
+                <nc:PersonSurName>Allen</nc:PersonSurName>
+            </nc:PersonName>
+            <tns:PseudonymText>Flash</tns:PseudonymText>
+        </tns:SuperHero>
+    </tns:JusticeLeagueOfAmericaSuperHeroList>
+    <tns:FiftyTwoJusticeLeagueSuperHeroList>
+        <tns:SuperHero structures:ref="SH1" xsi:nil="true" /> 
+        <tns:SuperHero structures:ref="SH2" xsi:nil="true" /> 
+        <tns:SuperHero structures:ref="SH3" xsi:nil="true" /> 
+        <tns:SuperHero>
+            <nc:PersonName>
+                <nc:PersonGivenName>Victor</nc:PersonGivenName>
+                <nc:PersonSurName>Stone</nc:PersonSurName>
+            </nc:PersonName>
+            <tns:PseudonymText>Cyborg</tns:PseudonymText>
+        </tns:SuperHero>
+        <tns:SuperHero>
+            <nc:PersonName>
+                <nc:PersonGivenName>Rhonda</nc:PersonGivenName>
+                <nc:PersonSurName>Pineda</nc:PersonSurName>
+            </nc:PersonName>
+            <tns:PseudonymText>The Atom</tns:PseudonymText>
+        </tns:SuperHero>
+    </tns:FiftyTwoJusticeLeagueSuperHeroList>
+</tns:JusticeLeagueShows>

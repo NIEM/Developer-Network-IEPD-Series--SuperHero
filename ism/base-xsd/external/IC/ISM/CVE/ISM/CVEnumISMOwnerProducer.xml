@@ -1,0 +1,1264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Notices - Distribution Notice: 
+           This document has been approved for Public Release and is available for use without restriction.
+       --><cve:CVE xmlns:cve="urn:us:gov:ic:cve" xmlns:ddms="urn:us:mil:ces:metadata:ddms:5"
+         xmlns="urn:us:gov:ic:cve"
+         xmlns:ism="urn:us:gov:ic:ism"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         ism:ownerProducer="USA"
+         ism:classification="U"
+         ism:DESVersion="10"
+         ism:resourceElement="true"
+         CVEVersion="2"
+         ism:createDate="2011-06-24"
+         xsi:schemaLocation="urn:us:gov:ic:cve ../Schema/CVEXml.xsd">
+	
+	  <cve:IRM>
+		    <ddms:identifier ddms:qualifier="name" ddms:value="urn:us:gov:ic:cvenum:ism:ownerproducer"/>
+		    <ddms:title ism:ownerProducer="USA" ism:classification="U">CVEnumISMOwnerProducer</ddms:title>
+		    <ddms:description ism:ownerProducer="USA" ism:classification="U">
+		    	FGI, followed by all currently valid GENC trigraphs in alphabetical order by trigraph, 
+				followed by all currently valid CAPCO Coalition tetragraphs in alphabetical order by tetragraph.
+		    </ddms:description>
+		
+		    <cve:Created>2011-11-17T08:45:00-04:00</cve:Created>
+		
+	  	  <ddms:source ddms:value="CAPCO Register Appendix A"/>	
+	  	  <ddms:source ddms:value="GENC v1 http://geo.aitcnet.org/NSGREG/genc"/>
+	  	  <ddms:pointOfContact>
+            <ddms:organization>
+                <ddms:name>Office IC CIO</ddms:name>
+                <ddms:email>datastandardssupport@ugov.gov</ddms:email>
+            </ddms:organization>
+        </ddms:pointOfContact>
+	  </cve:IRM>
+	
+	  <cve:Enumeration multivalue="true" ism:ownerProducer="USA" ism:classification="U">
+			<!-- FGI -->
+		    <Term ism:classification="U" ism:ownerProducer="USA">
+			      <Value ism:classification="U" ism:ownerProducer="USA">FGI</Value>
+			      <ddms:description ism:classification="U" ism:ownerProducer="USA">Foreign Government Information</ddms:description>
+		    </Term>
+	  	
+	     <!--All currently valid GENC trigraphs except AX1 in alphabetical order by trigraph--><Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">ABW</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Aruba</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">AFG</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Islamic Republic of Afghanistan</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">AGO</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Angola</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">AIA</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Anguilla</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">ALB</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Republic of Albania</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">AND</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Principality of Andorra</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">ARE</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">United Arab Emirates</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">ARG</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Argentine Republic</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">ARM</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Armenia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">ASM</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Territory of American Samoa</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">ATA</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Antarctica</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">ATF</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">French Southern and Antarctic Lands</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">ATG</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Antigua and Barbuda</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">AUS</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Commonwealth of Australia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">AUT</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Austria</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">AX2</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Guantanamo Bay</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">AZE</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Azerbaijan</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">BDI</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Burundi</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">BEL</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Kingdom of Belgium</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">BEN</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Benin</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">BES</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Bonaire, Sint Eustatius, and Saba</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">BFA</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Burkina Faso</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">BGD</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">People's Republic of Bangladesh</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">BGR</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Republic of Bulgaria</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">BHR</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Kingdom of Bahrain</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">BHS</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Commonwealth of The Bahamas</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">BIH</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Bosnia and Herzegovina</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">BLM</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Saint Barthelemy</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">BLR</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Republic of Belarus</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">BLZ</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Belize</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">BMU</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Bermuda</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">BOL</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Plurinational State of Bolivia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">BRA</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Federative Republic of Brazil</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">BRB</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Barbados</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">BRN</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Brunei Darussalam</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">BTN</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Kingdom of Bhutan</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">BVT</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Bouvet Island</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">BWA</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Botswana</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">CAF</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Central African Republic</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">CAN</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Canada</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">CCK</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Territory of Cocos (Keeling) Islands</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">CHE</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Swiss Confederation</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">CHL</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Republic of Chile</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">CHN</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">People's Republic of China</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">CIV</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Côte d'Ivoire</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">CMR</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Cameroon</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">COD</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Democratic Republic of the Congo</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">COG</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Republic of the Congo</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">COK</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Cook Islands (the)</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">COL</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Republic of Colombia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">COM</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Union of the Comoros</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">CPT</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Clipperton Island</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">CPV</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Republic of Cape Verde</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">CRI</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Republic of Costa Rica</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">CUB</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Republic of Cuba</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">CUW</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Curaçao</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">CXR</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Territory of Christmas Island</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">CYM</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Cayman Islands (the)</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">CYP</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Republic of Cyprus</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">CZE</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Czech Republic</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">DEU</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Federal Republic of Germany</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">DGA</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Diego Garcia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">DJI</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Djibouti</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">DMA</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Commonwealth of Dominica</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">DNK</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Kingdom of Denmark</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">DOM</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Dominican Republic</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">DZA</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the People's Democratic Republic of Algeria</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">ECU</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Republic of Ecuador</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">EGY</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Arab Republic of Egypt</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">ERI</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the State of Eritrea</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">ESH</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Western Sahara</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">ESP</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Kingdom of Spain</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">EST</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Estonia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">ETH</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Federal Democratic Republic of Ethiopia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">FIN</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Finland</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">FJI</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Fiji</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">FLK</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Falkland Islands (Islas Malvinas)</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">FRA</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">French Republic</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">FRO</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Faroe Islands (the)</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">FSM</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Federated States of Micronesia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">GAB</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Gabonese Republic</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">GBR</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the United Kingdom of Great Britain and Northern Ireland</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">GEO</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Georgia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">GGY</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Bailiwick of Guernsey</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">GHA</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Ghana</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">GIB</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Gibraltar</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">GIN</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Guinea</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">GLP</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Department of Guadeloupe</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">GMB</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Republic of The Gambia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">GNB</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Guinea-Bissau</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">GNQ</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Republic of Equatorial Guinea</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">GRC</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Hellenic Republic</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">GRD</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Grenada</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">GRL</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Greenland</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">GTM</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Guatemala</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">GUF</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Department of Guiana</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">GUM</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Territory of Guam</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">GUY</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Co-operative Republic of Guyana</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">HKG</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Hong Kong Special Administrative Region</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">HMD</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Territory of Heard Island and McDonald Islands</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">HND</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Honduras</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">HRV</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Croatia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">HTI</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Haiti</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">HUN</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Hungary</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">IDN</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Indonesia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">IMN</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Isle of Man</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">IND</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Republic of India</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">IOT</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">British Indian Ocean Territory</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">IRL</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Ireland</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">IRN</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Islamic Republic of Iran</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">IRQ</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Iraq</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">ISL</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Iceland</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">ISR</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the State of Israel</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">ITA</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Italian Republic</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">JAM</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Jamaica</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">JEY</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Bailiwick of Jersey</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">JOR</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Hashemite Kingdom of Jordan</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">JPN</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Japan</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">KAZ</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Kazakhstan</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">KEN</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Kenya</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">KGZ</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Kyrgyz Republic</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">KHM</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Kingdom of Cambodia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">KIR</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Republic of Kiribati</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">KNA</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Federation of Saint Kitts and Nevis</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">KOR</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Republic of Korea</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">KWT</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the State of Kuwait</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">LAO</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Lao People's Democratic Republic</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">LBN</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Lebanese Republic</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">LBR</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Liberia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">LBY</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Libya</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">LCA</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Saint Lucia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">LIE</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Principality of Liechtenstein</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">LKA</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Democratic Socialist Republic of Sri Lanka</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">LSO</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Kingdom of Lesotho</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">LTU</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Lithuania</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">LUX</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Grand Duchy of Luxembourg</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">LVA</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Latvia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">MAC</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Macau Special Administrative Region</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">MAF</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Saint Martin</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">MAR</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Kingdom of Morocco</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">MCO</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Principality of Monaco</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">MDA</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Republic of Moldova</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">MDG</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Madagascar</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">MDV</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Maldives</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">MEX</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the United Mexican States</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">MHL</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Republic of the Marshall Islands</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">MKD</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Republic of Macedonia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">MLI</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Mali</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">MLT</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Malta</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">MMR</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Union of Burma</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">MNE</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Montenegro</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">MNG</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Mongolia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">MNP</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Commonwealth of the Northern Mariana Islands</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">MOZ</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Mozambique</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">MRT</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Islamic Republic of Mauritania</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">MSR</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Montserrat</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">MTQ</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Department of Martinique</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">MUS</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Republic of Mauritius</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">MWI</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Malawi</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">MYS</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Malaysia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">MYT</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Department of Mayotte</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">NAM</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Namibia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">NCL</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">New Caledonia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">NER</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of the Niger</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">NFK</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Territory of Norfolk Island</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">NGA</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Federal Republic of Nigeria</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">NIC</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Nicaragua</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">NIU</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Niue</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">NLD</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Kingdom of the Netherlands</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">NOR</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Kingdom of Norway</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">NPL</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Federal Democratic Republic of Nepal</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">NRU</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Nauru</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">NZL</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">New Zealand</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">OMN</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Sultanate of Oman</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">PAK</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Islamic Republic of Pakistan</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">PAN</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Panama</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">PCN</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Pitcairn, Henderson, Ducie, and Oeno Islands</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">PER</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Peru</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">PHL</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Republic of the Philippines</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">PLW</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Palau</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">PNG</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Independent State of Papua New Guinea</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">POL</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Poland</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">PRI</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Commonwealth of Puerto Rico</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">PRK</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Democratic People's Republic of Korea</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">PRT</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Portuguese Republic</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">PRY</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Paraguay</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">PSE</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Palestinian Territory</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">PYF</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">French Polynesia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">QAT</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the State of Qatar</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">REU</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Department of Reunion</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">ROU</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Romania</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">RUS</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Russian Federation</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">RWA</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Rwanda</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">SAU</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Kingdom of Saudi Arabia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">SDN</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of the Sudan</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">SEN</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Senegal</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">SGP</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Singapore</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">SGS</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">South Georgia and the South Sandwich Islands</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">SHN</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Saint Helena, Ascension, and Tristan da Cunha</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">SLB</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Solomon Islands (the)</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">SLE</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Sierra Leone</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">SLV</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of El Salvador</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">SMR</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of San Marino</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">SOM</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Somalia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">SPM</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Territorial Collectivity of Saint Pierre and Miquelon</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">SRB</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Republic of Serbia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">SSD</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of South Sudan</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">STP</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Democratic Republic of Sao Tome and Principe</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">SUR</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Suriname</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">SVK</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Slovak Republic</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">SVN</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Slovenia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">SWE</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Kingdom of Sweden</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">SWZ</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Kingdom of Swaziland</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">SXM</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Sint Maarten</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">SYC</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Republic of Seychelles</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">SYR</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Syrian Arab Republic</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">TCA</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Turks and Caicos Islands (the)</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">TCD</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Chad</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">TGO</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Togolese Republic</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">THA</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Kingdom of Thailand</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">TJK</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Tajikistan</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">TKL</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Tokelau</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">TKM</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Turkmenistan</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">TLS</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Democratic Republic of Timor-Leste</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">TON</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Kingdom of Tonga</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">TTO</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Trinidad and Tobago</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">TUN</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Tunisian Republic</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">TUR</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Turkey</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">TUV</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Tuvalu</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">TWN</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Taiwan</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">TZA</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">United Republic of Tanzania</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">UGA</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Uganda</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">UKR</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Ukraine</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">URY</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Oriental Republic of Uruguay</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">USA</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">United States of America</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">UZB</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Uzbekistan</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">VAT</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">State of the Vatican City</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">VCT</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Saint Vincent and the Grenadines</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">VEN</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Bolivarian Republic of Venezuela</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">VGB</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Virgin Islands, British</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">VIR</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">United States Virgin Islands</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">VNM</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Socialist Republic of Vietnam</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">VUT</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Republic of Vanuatu</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">WLF</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Wallis and Futuna</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">WSM</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Independent State of Samoa</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XAC</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Territory of Ashmore and Cartier Islands</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XAZ</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Entity 1</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XBI</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Bassas da India</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XBK</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Baker Island</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XCR</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Entity 2</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XCS</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Coral Sea Islands Territory</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XCY</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Entity 3</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XEU</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Europa Island</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XGL</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Glorioso Islands</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XGZ</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Gaza Strip</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XHO</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Howland Island</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XJA</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Johnston Atoll</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XJM</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Jan Mayen</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XJN</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Juan de Nova Island</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XJV</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Jarvis Island</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XKM</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Entity 4</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XKN</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Entity 5</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XKR</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Kingman Reef</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XKS</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Republic of Kosovo</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XMW</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Midway Islands</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XNV</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Navassa Island</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XPL</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Palmyra Atoll</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XPR</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Paracel Islands</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XQP</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Etorofu, Habomai, Kunashiri, and Shikotan Islands </ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XQZ</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Akrotiri</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XSP</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Spratly Islands</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XSV</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Svalbard</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XTR</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Tromelin Island</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XWB</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">West Bank</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XWK</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Wake Island</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XXD</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Dhekelia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">XXX</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">No Man's Land</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">YEM</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Republic of Yemen</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:GENC:3:ed1">
+         <Value ism:classification="U" ism:ownerProducer="USA">ZAF</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">Republic of South Africa</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">ZMB</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Zambia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" cve:codespace="ge:ISO1:3:VI-13">
+         <Value ism:classification="U" ism:ownerProducer="USA">ZWE</Value>
+         <ddms:description ism:classification="U" ism:ownerProducer="USA">the Republic of Zimbabwe</ddms:description>
+      </Term>
+      <!--All currently valid CAPCO Coalition tetragraphs in alphabetical order by tetragraph--><Term ism:classification="U" ism:ownerProducer="USA">
+        <Value ism:classification="U" ism:ownerProducer="USA">ACGU</Value>
+        <ddms:description ism:classification="U" ism:ownerProducer="USA">FOUR EYES</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA">
+        <Value ism:classification="U" ism:ownerProducer="USA">APFS</Value>
+        <ddms:description ism:classification="U" ism:ownerProducer="USA">Suppressed</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA">
+        <Value ism:classification="U" ism:ownerProducer="USA">BWCS</Value>
+        <ddms:description ism:classification="U" ism:ownerProducer="USA">Biological Weapons Convention States</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA">
+        <Value ism:classification="U" ism:ownerProducer="USA">CFCK</Value>
+        <ddms:description ism:classification="U" ism:ownerProducer="USA">ROK/US Combined Forces Command, Korea</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA">
+        <Value ism:classification="U" ism:ownerProducer="USA">CMFC</Value>
+        <ddms:description ism:classification="U" ism:ownerProducer="USA">Combined Maritime Forces Central</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA">
+        <Value ism:classification="U" ism:ownerProducer="USA">CMFP</Value>
+        <ddms:description ism:classification="U" ism:ownerProducer="USA">Cooperative Maritime Forces Pacific</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA">
+        <Value ism:classification="U" ism:ownerProducer="USA">CPMT</Value>
+        <ddms:description ism:classification="U" ism:ownerProducer="USA">Civilian Protection Monitoring Team for Sudan</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA">
+        <Value ism:classification="U" ism:ownerProducer="USA">CTOC</Value>
+        <ddms:description ism:classification="U" ism:ownerProducer="USA">Countering Transnational Organized Crime</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA">
+        <Value ism:classification="U" ism:ownerProducer="USA">CWCS</Value>
+        <ddms:description ism:classification="U" ism:ownerProducer="USA">Chemical Weapons Convention States</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" deprecated="2012-06-15">
+        <Value ism:classification="U" ism:ownerProducer="USA">EFOR</Value>
+        <ddms:description ism:classification="U" ism:ownerProducer="USA">European Union Stabilization Forces in Bosnia</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" deprecated="2012-05-25">
+        <Value ism:classification="U" ism:ownerProducer="USA">EUDA</Value>
+        <ddms:description ism:classification="U" ism:ownerProducer="USA">European Union DARFUR</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA">
+        <Value ism:classification="U" ism:ownerProducer="USA">FVEY</Value>
+        <ddms:description ism:classification="U" ism:ownerProducer="USA">FIVE EYES</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA">
+        <Value ism:classification="U" ism:ownerProducer="USA">GCTF</Value>
+        <ddms:description ism:classification="U" ism:ownerProducer="USA">Global Counter-Terrorism Forces</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA">
+        <Value ism:classification="U" ism:ownerProducer="USA">GMIF</Value>
+        <ddms:description ism:classification="U" ism:ownerProducer="USA">Global Maritime Interception Forces</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA">
+        <Value ism:classification="U" ism:ownerProducer="USA">ISAF</Value>
+        <ddms:description ism:classification="U" ism:ownerProducer="USA">International Security Assistance Force for Afghanistan</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA">
+        <Value ism:classification="U" ism:ownerProducer="USA">KFOR</Value>
+        <ddms:description ism:classification="U" ism:ownerProducer="USA">Stabilization Forces in Kosovo</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA" deprecated="2012-05-18">
+        <Value ism:classification="U" ism:ownerProducer="USA">MIFH</Value>
+        <ddms:description ism:classification="U" ism:ownerProducer="USA">Multinational Interim Force Haiti</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA">
+        <Value ism:classification="U" ism:ownerProducer="USA">MLEC</Value>
+        <ddms:description ism:classification="U" ism:ownerProducer="USA">Multi-Lateral Enduring Contingency</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA">
+        <Value ism:classification="U" ism:ownerProducer="USA">NACT</Value>
+        <ddms:description ism:classification="U" ism:ownerProducer="USA">North African Counter-Terrorism Forces</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA">
+        <Value ism:classification="U" ism:ownerProducer="USA">NATO</Value>
+        <ddms:description ism:classification="U" ism:ownerProducer="USA">North Atlantic Treaty Organization</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA">
+        <Value ism:classification="U" ism:ownerProducer="USA">OSTY</Value>
+        <ddms:description ism:classification="U" ism:ownerProducer="USA">Open Skies Treaty</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA">
+        <Value ism:classification="U" ism:ownerProducer="USA">SPAA</Value>
+        <ddms:description ism:classification="U" ism:ownerProducer="USA">Suppressed</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA">
+        <Value ism:classification="U" ism:ownerProducer="USA">TEYE</Value>
+        <ddms:description ism:classification="U" ism:ownerProducer="USA">THREE EYES</ddms:description>
+      </Term>
+      <Term ism:classification="U" ism:ownerProducer="USA">
+        <Value ism:classification="U" ism:ownerProducer="USA">UNCK</Value>
+        <ddms:description ism:classification="U" ism:ownerProducer="USA">United Nations Command, Korea</ddms:description>
+      </Term>
+   </cve:Enumeration>
+</cve:CVE>

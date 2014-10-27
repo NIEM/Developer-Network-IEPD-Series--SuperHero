@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/SuperHero-extension" xmlns:tns="http://www.example.org/SuperHero-extension"
+	xmlns:nc="http://release.niem.gov/niem/niem-core/3.0/" xmlns:niem-xsd="http://release.niem.gov/niem/proxy/xsd/3.0/"
+	xmlns:structures="http://release.niem.gov/niem/structures/3.0/"
+	ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/#ExtensionSchemaDocument"
+	xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/"
+	elementFormDefault="qualified">
+
+	<xs:import namespace="http://release.niem.gov/niem/niem-core/3.0/"
+		schemaLocation="../niem/niem-core/3.0/niem-core.xsd" />
+	<xs:import schemaLocation="../niem/proxy/xsd/3.0/xs.xsd"
+		namespace="http://release.niem.gov/niem/proxy/xsd/3.0/"></xs:import>
+	<xs:import namespace="http://release.niem.gov/niem/structures/3.0/"
+		schemaLocation="../niem/structures/3.0/structures.xsd" />
+
+	<xs:annotation>
+		<xs:documentation>This IEPD shows how to use augmentations to add one or more properties to an exiting Type.
+			The context of this IEPD is based on Superheros.
+		</xs:documentation>
+	</xs:annotation>
+
+	<xs:element name="PersonClothingDescriptionText" type="niem-xsd:string" substitutionGroup="nc:PersonAugmentationPoint">
+		<xs:annotation>
+			<xs:documentation>A description of the clothing worn by a person.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+
+
+</xs:schema>
